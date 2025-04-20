@@ -15,7 +15,7 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Ayu Dark"
+    "dark": "Ayu Mirage"
   },
   "inlay_hints": {
     "enabled": true,
@@ -47,7 +47,34 @@
     }
   },
   "assistant": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-latest"
+    },
     "version": "2",
     "default_width": 350
+  },
+
+  "language_models": {
+    "openai": {
+      "version": "1",
+      "api_url": "https://openrouter.ai/api/v1",
+      "available_models": [
+        {
+          "provider": "openai",
+          "name": "google/gemini-2.5-pro-preview-03-25",
+          "max_tokens": 32000
+        },
+        {
+          "provider": "openai",
+          "name": "google/gemini-2.0-flash-001",
+          "max_tokens": 32000
+        }
+      ]
+    }
+  },
+
+  "edit_predictions": {
+    "mode": "eager"
   }
 }
