@@ -46,10 +46,11 @@
       }
     }
   },
-  "assistant": {
+  "agent": {
+    "default_profile": "minimal",
     "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-3-5-sonnet-latest"
+      "provider": "openai",
+      "model": "google/gemini-2.5-flash-preview:thinking"
     },
     "version": "2",
     "default_width": 350
@@ -62,13 +63,23 @@
       "available_models": [
         {
           "provider": "openai",
-          "name": "google/gemini-2.5-pro-preview-03-25",
-          "max_tokens": 32000
+          "name": "google/gemini-2.5-pro-exp-03-25",
+          "max_tokens": 1000000
         },
         {
           "provider": "openai",
-          "name": "google/gemini-2.0-flash-001",
-          "max_tokens": 32000
+          "name": "anthropic/claude-3.7-sonnet",
+          "max_tokens": 200000
+        },
+        {
+          "provider": "openai",
+          "name": "google/gemini-2.5-flash-preview:thinking",
+          "max_tokens": 100000
+        },
+        {
+          "provider": "openai",
+          "name": "anthropic/claude-3.5-sonnet",
+          "max_tokens": 200000
         }
       ]
     }
