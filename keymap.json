@@ -16,7 +16,6 @@
     "context": "Editor && mode == full",
     "bindings": {
       "cmd-l": "workspace::ToggleRightDock",
-      "cmd-shift-l": "assistant::NewChat",
       "cmd-k": "assistant::InlineAssist"
       // "j k": ["workspace::SendKeystrokes", "escape"]
     }
