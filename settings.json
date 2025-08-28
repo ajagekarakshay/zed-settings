@@ -15,7 +15,7 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Ayu Mirage"
+    "dark": "Ayu Dark"
   },
   "inlay_hints": {
     "enabled": true,
@@ -50,42 +50,12 @@
     "edit_prediction_provider": "supermaven"
   },
   "agent": {
-    "default_profile": "minimal",
+    "default_profile": "write",
     "default_model": {
-      "provider": "openai",
-      "model": "google/gemini-2.5-flash-preview:thinking"
+      "provider": "copilot_chat",
+      "model": "claude-sonnet-4"
     },
-    "version": "2",
     "default_width": 350
-  },
-
-  "language_models": {
-    "openai": {
-      "version": "1",
-      "api_url": "https://openrouter.ai/api/v1",
-      "available_models": [
-        {
-          "provider": "openai",
-          "name": "google/gemini-2.5-pro-exp-03-25",
-          "max_tokens": 1000000
-        },
-        {
-          "provider": "openai",
-          "name": "anthropic/claude-3.7-sonnet",
-          "max_tokens": 200000
-        },
-        {
-          "provider": "openai",
-          "name": "google/gemini-2.5-flash-preview:thinking",
-          "max_tokens": 100000
-        },
-        {
-          "provider": "openai",
-          "name": "anthropic/claude-3.5-sonnet",
-          "max_tokens": 200000
-        }
-      ]
-    }
   },
 
   "edit_predictions": {
