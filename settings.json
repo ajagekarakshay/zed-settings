@@ -37,6 +37,11 @@
       "enabled": false
     }
   },
+  "languages": {
+    "Python": {
+      "language_servers": ["pyrefly"]
+    }
+  },
   "lsp": {
     "rust-analyzer": {
       "initialization_options": {
