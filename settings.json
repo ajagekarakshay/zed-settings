@@ -64,6 +64,13 @@
   },
 
   "edit_predictions": {
-    "mode": "eager"
+    "mode": "subtle"
+  },
+
+  "agent_servers": {
+    "Claude Code": {
+      "command": "claude-code-acp",
+      "env": {}
+    }
   }
 }
