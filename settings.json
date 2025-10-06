@@ -39,7 +39,7 @@
   },
   "languages": {
     "Python": {
-      "language_servers": ["pyrefly"]
+      "language_servers": ["ty"]
     }
   },
   "lsp": {
@@ -55,11 +55,6 @@
     "edit_prediction_provider": "supermaven"
   },
   "agent": {
-    "default_profile": "write",
-    "default_model": {
-      "provider": "copilot_chat",
-      "model": "claude-sonnet-4"
-    },
     "default_width": 350
   },
 
