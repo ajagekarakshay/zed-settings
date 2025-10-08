@@ -8,6 +8,14 @@
 [
   {
     "bindings": {
+      "ctrl-shift-l": [
+        "agent::NewExternalAgentThread",
+        { "agent": "claude_code" }
+      ]
+    }
+  },
+  {
+    "bindings": {
       "cmd-backspace": "editor::DeleteToPreviousSubwordStart"
     }
   },
