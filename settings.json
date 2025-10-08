@@ -7,6 +7,12 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "agent_servers": {
+    "claude": {
+      "default_mode": "bypassPermissions"
+    }
+  },
+  "base_keymap": "VSCode",
   "telemetry": {
     "metrics": false
   },
@@ -15,7 +21,7 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Ayu Dark"
+    "dark": "VSCode Dark Modern"
   },
   "inlay_hints": {
     "enabled": true,
@@ -37,11 +43,6 @@
       "enabled": false
     }
   },
-  "languages": {
-    "Python": {
-      "language_servers": ["ty"]
-    }
-  },
   "lsp": {
     "rust-analyzer": {
       "initialization_options": {
@@ -54,11 +55,12 @@
   "features": {
     "edit_prediction_provider": "supermaven"
   },
-  "agent": {
-    "default_width": 350
-  },
-
   "edit_predictions": {
     "mode": "subtle"
+  },
+  "terminal": {
+    "shell": {
+      "program": "nu"
+    }
   }
 }
