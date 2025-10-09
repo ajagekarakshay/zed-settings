@@ -45,5 +45,18 @@
       // Here we also allow `alt-enter` to accept the prediction
       "alt-enter": "editor::AcceptEditPrediction"
     }
+  },
+  // Bind `tab` back to its original behavior.
+  {
+    "context": "Editor",
+    "bindings": {
+      "tab": "editor::Tab"
+    }
+  },
+  {
+    "context": "Editor && showing_completions",
+    "bindings": {
+      "tab": "editor::ComposeCompletion"
+    }
   }
 ]
